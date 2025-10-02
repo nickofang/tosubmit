@@ -1,0 +1,133 @@
+ion-content {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  padding: 1rem;
+}
+
+.welcome {
+  margin-bottom: 1.5rem;
+  text-align: center;
+
+  h2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #343a40;
+  }
+
+  p {
+    margin: 0.25rem 0 0;
+    color: #6c757d;
+    font-size: 0.95rem;
+  }
+}
+
+.professional-grid {
+  width: 100%;
+  height: 420px;
+  border-radius: 6px;
+  overflow: hidden;
+
+  .ag-header {
+    background-color: #dee2e6;
+    border-bottom: 1px solid #ced4da;
+  }
+
+  .ag-header-cell {
+    background-color: #e9ecef;
+    font-weight: 600;
+    color: #495057;
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  .ag-cell {
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #212529;
+    border-bottom: 1px solid #f1f3f5;
+  }
+
+  .ag-row-hover {
+    background-color: #f1f3f5 !important;
+  }
+
+  .ag-row-selected {
+    background-color: #d4edda !important;
+  }
+}
+
+ion-content {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  padding: 1rem;
+}
+
+.welcome {
+  margin-bottom: 1.5rem;
+  text-align: center;
+
+  h2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #343a40;
+  }
+
+  p {
+    margin: 0.25rem 0 0;
+    color: #6c757d;
+    font-size: 0.95rem;
+  }
+}
+
+.professional-grid {
+  width: 100%;
+  height: 420px;
+  border-radius: 6px;
+  overflow: hidden;
+
+  .ag-header {
+    background-color: #dee2e6;
+    border-bottom: 1px solid #ced4da;
+  }
+
+  .ag-header-cell {
+    background-color: #e9ecef;
+    font-weight: 600;
+    color: #495057;
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  .ag-cell {
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #212529;
+    border-bottom: 1px solid #f1f3f5;
+  }
+
+  .ag-row-hover {
+    background-color: #f1f3f5 !important;
+  }
+
+  .ag-row-selected {
+    background-color: #d4edda !important;
+  }
+}
+
+.book-button {
+  margin-top: 1.5rem;
+  --background: #0d6efd; // Bootstrap blue
+  --color: #ffffff;
+  --border-radius: 8px;
+  --padding-start: 0.75rem;
+  --padding-end: 0.75rem;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  background-color: var(--background);
+  color: var(--color);
+}

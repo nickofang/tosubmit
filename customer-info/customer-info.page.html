@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Edit Customer Info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" style="background: #f4f6f8;">
+  <div class="profile-container">
+    <ion-card class="profile-card">
+      <ion-card-header class="profile-header">
+        <div class="avatar">
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </div>
+        <ion-card-title>Profile</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <!-- Name Section -->
+        <ion-item lines="none" class="item-section">
+          <ion-label position="stacked">Name</ion-label>
+          <div *ngIf="!isEditing" class="name-display">
+            <h2>{{ customerName }}</h2>
+            <ion-button size="small" fill="outline" color="tertiary" (click)="toggleEdit()">
+              <ion-icon slot="start" name="create-outline"></ion-icon>Edit
+            </ion-button>
+          </div>
+
+          <div *ngIf="isEditing" class="name-edit">
+            <ion-input [(ngModel)]="editableName" placeholder="Enter name"></ion-input>
+            <ion-button size="small" color="primary" (click)="saveName()">
+              <ion-icon slot="start" name="checkmark-outline"></ion-icon>Save
+            </ion-button>
+            <ion-button size="small" color="medium" fill="outline" (click)="toggleEdit()">
+              <ion-icon slot="start" name="close-outline"></ion-icon>Cancel
+            </ion-button>
+          </div>
+        </ion-item>
+
+        <!-- Email Section -->
+        <ion-item lines="none" class="item-section">
+          <ion-label position="stacked">Email</ion-label>
+          <h2>{{ getUserEmail() }}</h2>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

@@ -1,0 +1,54 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+.profile-header {
+  text-align: center;
+  background: #3880ff;
+  color: #fff;
+  padding: 2rem 1rem;
+
+  .avatar {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  ion-card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+}
+
+.item-section {
+  margin: 1rem 0;
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.3rem 0;
+  }
+
+  ion-button {
+    margin-left: 0.5rem;
+  }
+
+  ion-input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.name-display h2 {
+  display: inline-block;
+  margin-right: 0.5rem;
+}

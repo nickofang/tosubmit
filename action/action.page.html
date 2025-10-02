@@ -1,0 +1,32 @@
+<ion-content class="ion-padding">
+  <div class="header-actions">
+    <h2 class="welcome-text">Welcome, {{ "Nicko Fang" }}</h2>
+
+    <ion-button class="edit-button" routerLink="/customer-info">
+      <ion-icon slot="start" name="person-outline"></ion-icon>
+      Edit Customer Account
+    </ion-button>
+
+        <ion-button class="edit-button" routerLink="/sales-orders">
+      <ion-icon slot="start" name="person-outline"></ion-icon>
+      
+    Order History
+    </ion-button>
+  </div>
+
+  <div class="grid-wrapper">
+    <ag-grid-angular
+      style="width: 100%; height: 400px;"
+      class="ag-theme-alpine professional-grid"
+      [columnDefs]="columnDefs"
+      [defaultColDef]="defaultColDef"
+      [rowData]="rowData"
+      [modules]="modules"
+      (gridReady)="onGridReady($event)">
+    </ag-grid-angular>
+  </div>
+
+  <ion-button expand="block" class="book-button" (click)="openBookingModal()">
+    BOOK DELIVERY
+  </ion-button>
+</ion-content>

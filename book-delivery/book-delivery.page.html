@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Book Delivery</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h2>Selected Orders:</h2>
+  <ul>
+    <li *ngFor="let order of selectedOrders">
+      Order ID: {{ order.orderId }} - Ordered By: {{ order.orderedBy }}
+    </li>
+  </ul>
+
+  <ion-item>
+    <ion-label>Delivery Time</ion-label>
+    <ion-datetime [(ngModel)]="selectedDate"></ion-datetime>
+  </ion-item>
+
+  <ion-button expand="full" color="primary" (click)="confirmBooking()">Confirm Booking</ion-button>
+</ion-content>
